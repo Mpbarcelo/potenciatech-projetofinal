@@ -1,0 +1,193 @@
+/* Reset de estilos para remoção de margens e preenchimentos padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos globais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  line-height: 1.6;
+  padding-top: 40px; /* Adicionando padding no topo do body para compensar o menu fixo */
+}
+
+/* Estilos para o header e o nav */
+header {
+  background-color: #333;
+  padding: 10px 20px;
+  text-align: center;
+  position: fixed; /* Fixando o menu no topo */
+  width: 100%; /* Ocupando toda a largura da tela */
+  top: 0; /* Posicionando no topo */
+  z-index: 1000; /* Definindo uma ordem de empilhamento */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Espaçamento entre os itens do menu */
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px; /* Ajuste do padding */
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+/* Restante do seu CSS ... */
+
+/* Estilos para a seção principal */
+main {
+  max-width: 960px;
+  margin: 80px auto 20px; /* Ajuste das margens */
+  padding: 0 20px;
+}
+
+/* Estilos para títulos */
+h1,
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Estilos para parágrafos */
+p {
+  text-align: justify;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+/* Estilos para seções 'biography' e 'contributions' */
+.biography,
+.contributions {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para imagens */
+img {
+  border-radius: 8px;
+  width: 400px;
+  height: auto;
+  display: block;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin: 20px auto;
+}
+
+/* Estilos para o vídeo */
+iframe {
+  display: block;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ... Seus estilos CSS anteriores ... */
+
+/* Estilos para o carrossel de imagens */
+.carrosel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  margin: 0;
+  padding: 0;
+  width: calc(100% - 40px); /* Ajuste para garantir que o carrossel não ultrapasse a largura máxima */
+}
+
+/* Estilos para a seção do carrossel */
+.carrosel-container {
+  max-width: 960px;
+  margin: 100px auto 40px;
+  padding: 0 80px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para as imagens do carrossel */
+.carousel-img {
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+  width: 400px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Efeito ao passar o mouse sobre a imagem do carrossel */
+.carousel-img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* ... Outros estilos do seu CSS ... */
+
+
+/* estilo do quiz */
+.quiz-container {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#quiz {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #1e310b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1f2730;
+}
+
+#resultado {
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Estilos para o rodapé */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  padding: 20px 0;
+  background-color: #333;
+  text-align: center;
+  color: #f4f4f4;
+}
